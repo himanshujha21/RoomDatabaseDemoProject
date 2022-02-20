@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/whiteColor"
+            tools:context="com.example.roomdatabaseproject.BasicDetailsFragment">
+
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_launcher_background" />
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilePic"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:hint="@string/firstname"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editFirstName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:hint="@string/last_name"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editLastName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:hint="@string/enter_email_address"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+
+                android:inputType="textEmailAddress"
+
+                android:padding="20dp"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editEmailAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:textColor="@color/black"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textPhonetic"
+                android:padding="20dp"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnNext1"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/editPhone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/border_back"
+                android:padding="10dp"
+                android:text="@string/next"
+                android:textSize="16sp"
+
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
